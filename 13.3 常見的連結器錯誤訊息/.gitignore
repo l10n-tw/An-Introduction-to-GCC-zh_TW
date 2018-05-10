@@ -1,0 +1,47 @@
+# 不追蹤 Unix 可執行檔（無副檔名的檔案，GNU Make 的 Makefile 是例外）與可執行檔常見副檔名的檔案
+*
+!Makefile
+!*.*
+*.exe
+*.executable
+a.out
+
+# 不追蹤目標程式碼檔案
+*.o
+*.obj
+*.object_code
+
+# 不追蹤中間產物（預處理後之來源程式碼、組譯後之程式碼）
+*.i
+*.ii
+*.s
+
+# 不追蹤隱藏檔
+.*
+
+# 不追蹤程式的核心傾印(core dump)檔案
+core
+*.coredump
+
+# 不追蹤函式庫檔案
+*.a
+*.lib
+*.so
+*.dll
+
+# 不追蹤產生給 GNU profiler 使用的檔案
+gmon.out
+
+# 不追蹤產生給 GNU GCC gcov 命令使用的檔案
+*.bb
+*.bbg
+*.da
+*.gcov
+*.gcda
+*.gcno
+
+# 第 13.3 章範例檔案
+!hello
+
+# 追蹤 Git ignore 規則
+!.gitignore
